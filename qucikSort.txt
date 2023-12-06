@@ -1,0 +1,43 @@
+const quickSort = (arr) => {
+  if (arr.length <= 2) {
+    if (arr[0] > arr[1] ) {
+      let temp = arr[0];
+      arr[0] = arr[1];
+      arr[1] = temp;
+    }
+    return arr;
+  }
+
+  console.log('text')
+
+const message1 =  arr.length % 3 === 0 ? (arr.length)/3 : (arr.length % 3 === 1 ? (arr.length-1)/3 : (arr.length-2)/3);
+const message2 = arr.length % 3 === 0 ? (arr.length)*2/3 : (arr.length % 3 === 1 ? (arr.length-1)*2/3 : (arr.length-2)*2/3);
+  
+  let pivot1 = arr[message1];
+  let pivot2 = arr[message2];
+  let leftArr = [];
+  let middleArr = [];
+  let rightArr = [];
+
+  if (pivot2 < pivot1) {
+    let temp = pivot1;
+    pivot1 = pivot2;
+    pivot2 = temp;
+  };
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < pivot1 ) {
+      leftArr.push(arr[i]);
+    } else if (arr[i] > pivot1 && arr[i] < pivot2) {
+      middleArr.push(arr[i]);
+    } else if (arr[i] > pivot2) {
+      rightArr.push(arr[i]);
+    }
+  }
+
+  // return [leftArr, pivot, rightArr];
+  console.log(leftArr, pivot1, middleArr, pivot2, rightArr);
+  return [...quickSort(leftArr), pivot1, ...quickSort(middleArr), pivot2, ...quickSort(rightArr)];
+};
+let aaa = [234, 43, 55, 63, 5, 6, 547, -64, 3];
+console.log(quickSort(aaa));

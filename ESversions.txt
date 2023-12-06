@@ -1,0 +1,49 @@
+ES6, also known as ECMAScript 2015
+Arrow Functions> =.
+Classes
+Block-Scoped Variables: let and const
+Template Literals: `
+Default Parameters: undefiend
+Rest Parameters and Spread Operator: function(...arg), [...arg]
+Modules
+Promise
+
+ES7, also known as ECMAScript 2016
+Exponentiation Operator: 2**3
+Array.prototype.includes()
+Object.values() and Object.entries()
+Async/Await
+
+ES8, also known as ECMAScript 2017
+String Padding: ES8 introduced the padStart() and padEnd()
+Shared Memory and Atomics
+Async Functions
+Trailing Commas
+
+ES9, also known as ECMAScript 2018,
+Asynchronous Iteration: for-await-of loop
+Promise.finally()
+RegExp Improvements
+Object Property Order
+
+ES10, also known as ECMAScript 2019
+Array.flat()
+Array.flatMap()
+Optional Catch Binding in try Catch
+String.trimStart() and String.trimEnd():
+BigInt
+BigInt
+Global This
+
+ES11, also known as ECMAScript 2020,
+Optional Chaining (?.)
+Nullish Coalescing Operator (??):
+Promise.allSettled(): 
+GlobalThis: window in browsers and global in Node.js
+String.prototype.matchAll(): 
+Import Assertions:
+Promise.any(): 
+
+ES12, also known as ECMAScript 2021,
+Numeric Separators:
+String.prototype.replaceAll()
